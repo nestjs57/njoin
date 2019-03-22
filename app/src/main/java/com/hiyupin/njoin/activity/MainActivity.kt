@@ -6,6 +6,7 @@ import android.os.Bundle
 import com.chibatching.kotpref.Kotpref
 import com.hiyupin.njoin.R
 import com.hiyupin.njoin.UserConfig
+import com.hiyupin.njoin.activity.login.LoginActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Kotpref.init(this)
+        getSupportActionBar()?.hide();
         InitialLogin()
 
     }
@@ -23,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             0 -> {
                 val intent = Intent(this, LoginActivity::class.java)
                 startActivity(intent)
+                finish()
             }
         }
     }

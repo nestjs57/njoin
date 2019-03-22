@@ -3,7 +3,7 @@
                 xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                tools:context=".fragment.LoginFragment"
+                tools:context=".fragment.login.LoginFragment"
                 android:background="@android:color/background_light">
 
     <LinearLayout
@@ -65,7 +65,7 @@
                     android:inputType="textPersonName|textEmailAddress"
                     android:ems="10"
                     android:background="@android:color/transparent"
-                    android:id="@+id/editText"
+                    android:id="@+id/edt_username"
                     android:hint="@string/txt_username"
                     android:layout_marginLeft="10dp"
                     android:contentDescription="edtid"/>
@@ -90,7 +90,7 @@
                     android:inputType="textPersonName|textEmailAddress"
                     android:ems="10"
                     android:background="@android:color/transparent"
-                    android:id="@+id/editTextds"
+                    android:id="@+id/edt_passwords"
                     android:hint="@string/txt_password"
                     android:layout_marginLeft="10dp"
                     android:contentDescription="edt_pw"/>
@@ -103,7 +103,7 @@
                 android:padding="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
-                android:layout_marginTop="20dp">
+                android:layout_marginTop="20dp" android:id="@+id/linear_signin">
             <TextView
                     android:text="@string/txt_signin"
                     android:layout_width="wrap_content"
@@ -134,4 +134,25 @@
                     android:textSize="14sp"/>
         </LinearLayout>
     </LinearLayout>
+    <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/v_bg"
+            android:background="@android:color/background_light" android:alpha="0.5" android:visibility="gone"/>
+    <com.agrawalsuneet.dotsloader.loaders.LazyLoader
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:lazyloader_animDur="350"
+            android:layout_centerInParent="true"
+            app:lazyloader_dotsDist="10dp"
+            app:lazyloader_dotsRadius="5dp"
+            app:lazyloader_firstDelayDur="150"
+            app:lazyloader_firstDotColor="@color/colorPrimaryDark"
+            app:lazyloader_interpolator="@android:anim/decelerate_interpolator"
+            app:lazyloader_secondDelayDur="300"
+            app:lazyloader_secondDotColor="@color/colorPrimaryDark"
+            app:lazyloader_thirdDotColor="@color/colorPrimaryDark" android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp" android:layout_marginBottom="20dp" android:visibility="gone"
+            android:id="@+id/progress">
+    </com.agrawalsuneet.dotsloader.loaders.LazyLoader>
 </RelativeLayout>

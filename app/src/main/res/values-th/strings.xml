@@ -3,13 +3,18 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="txt_signin">SIGN IN</string>
-    <string name="txt_username">Username</string>
-    <string name="txt_password">Password</string>
-    <string name="txt_sign_in_with_google">SIGN IN WITH GOOGLE</string>
+    <string name="txt_signin">เข้าสู่ระบบ</string>
+    <string name="txt_username">อีเมล</string>
+    <string name="txt_password">รหัสผ่าน</string>
+    <string name="txt_sign_in_with_google">เข้าสู่ระบบด้วยบัญชี Google</string>
     <string name="txt_don_t_have_an_account">Don\'t have an account?</string>
-    <string name="txt_sign_up">SIGN UP</string>
-    <string name="txt_confirm_password">Confirm Password</string>
-    <string name="txt_fullname">Fullname</string>
-    <string name="txt_submit">SUBMIT</string>
+    <string name="txt_sign_up">สมัครสมาชิก</string>
+    <string name="txt_confirm_password">ยืนยันรหัสผ่านอีกครั้ง</string>
+    <string name="txt_fullname">ชื่อจริงที่ใช้ในระบบ</string>
+    <string name="txt_submit">ยืนยัน</string>
+    <string name="title_activity_main_page" translatable="false">MainPageActivity</string>
+    <string name="title_home" translatable="false">หน้าแรก</string>
+    <string name="title_review" translatable="false">รีวิวล่าสุด</string>
+    <string name="title_profile" translatable="false">ฉัน</string>
+    <string name="title_notifications" translatable="false">แจ้งเตือน</string>
 </resources>

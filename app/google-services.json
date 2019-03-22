@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "885812988224",
+    "firebase_url": "https://njoin-5ecd9.firebaseio.com",
+    "project_id": "njoin-5ecd9",
+    "storage_bucket": "njoin-5ecd9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:885812988224:android:04a7cf1d005a1ca8",
+        "android_client_info": {
+          "package_name": "com.hiyupin.njoin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "885812988224-ts1ilnq6o2fb2ooqfb3j0q630du7b9co.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hiyupin.njoin",
+            "certificate_hash": "90017e13d895c2c2760857ff296b9c2fd5979319"
+          }
+        },
+        {
+          "client_id": "885812988224-eqhv3dge631k8uj1q1m7fg4vfe46n2ab.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuzXvpGXaMxSqkygM6KXSIx-O5aqJopBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "885812988224-eqhv3dge631k8uj1q1m7fg4vfe46n2ab.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
