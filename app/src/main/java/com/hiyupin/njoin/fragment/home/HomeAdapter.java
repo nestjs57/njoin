@@ -13,8 +13,11 @@ import com.hiyupin.njoin.R;
 import com.hiyupin.njoin.pojo.home.ProductModel;
 import com.hiyupin.njoin.pojo.home.PromotionModel;
 import com.hiyupin.njoin.pojo.home.RootProductModel;
+import com.thekhaeng.pushdownanim.PushDownAnim;
 
 import java.util.ArrayList;
+
+import static com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE;
 
 public class HomeAdapter extends RecyclerView.Adapter<HomeViewHolder> {
 
@@ -83,24 +86,65 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeViewHolder> {
 
             homeViewHolder.product_view.setText(data.getProduct_total_scan() + " ครั้ง");
             homeViewHolder.product_price.setText(data.getProduct_total_price() + " บาท");
+
+            PushDownAnim.setPushDownAnimTo(homeViewHolder.linear_bg)
+                    .setScale(MODE_SCALE, 0.95f)
+                    .setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                        }
+
+                    });
         }
 
         if (i == TYPE_TITLE) {
             final RootProductModel data_title = statusSet.get(0);
+
+            //set image with glide
             Glide.with(homeViewHolder.ads_one)
                     .load(data_title.getPromotion().get(i).getPromotion_path())
                     .centerCrop()
                     .into(homeViewHolder.ads_one);
 
             Glide.with(homeViewHolder.ads_two)
-                    .load(data_title.getPromotion().get(i+1).getPromotion_path())
+                    .load(data_title.getPromotion().get(i + 1).getPromotion_path())
                     .centerCrop()
                     .into(homeViewHolder.ads_two);
 
             Glide.with(homeViewHolder.ads_three)
-                    .load(data_title.getPromotion().get(i+2).getPromotion_path())
+                    .load(data_title.getPromotion().get(i + 2).getPromotion_path())
                     .centerCrop()
                     .into(homeViewHolder.ads_three);
+
+            //set pushdown on click
+            PushDownAnim.setPushDownAnimTo(homeViewHolder.ads_one)
+                    .setScale(MODE_SCALE, 0.95f)
+                    .setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                        }
+
+                    });
+
+            PushDownAnim.setPushDownAnimTo(homeViewHolder.ads_two)
+                    .setScale(MODE_SCALE, 0.95f)
+                    .setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                        }
+
+                    });
+
+            PushDownAnim.setPushDownAnimTo(homeViewHolder.ads_three)
+                    .setScale(MODE_SCALE, 0.95f)
+                    .setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                        }
+
+                    });
+
+
         }
 
     }

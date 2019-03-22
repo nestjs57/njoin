@@ -3,10 +3,7 @@ package com.hiyupin.njoin.fragment.home;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.ImageButton;
-import android.widget.ImageView;
-import android.widget.RatingBar;
-import android.widget.TextView;
+import android.widget.*;
 import com.hiyupin.njoin.R;
 
 public class HomeViewHolder extends RecyclerView.ViewHolder {
@@ -15,6 +12,7 @@ public class HomeViewHolder extends RecyclerView.ViewHolder {
     ImageButton ads_two;
     ImageButton ads_three;
 
+    LinearLayout linear_bg;
     ImageView product_img;
     TextView product_name;
     TextView product_detail;
@@ -30,6 +28,7 @@ public class HomeViewHolder extends RecyclerView.ViewHolder {
         ads_two = itemView.findViewById(R.id.ads_two);
         ads_three = itemView.findViewById(R.id.ads_three);
 
+        linear_bg = itemView.findViewById(R.id.linear_bg);
         product_img = itemView.findViewById(R.id.product_img);
         product_name = itemView.findViewById(R.id.product_name);
         product_detail = itemView.findViewById(R.id.product_detail);
