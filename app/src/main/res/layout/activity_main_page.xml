@@ -24,7 +24,7 @@
         <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent" app:srcCompat="@drawable/ic_settings_white"
-                android:id="@+id/imageButton2"
+                android:id="@+id/img_btn_setting"
                 android:layout_gravity="right"
                 android:scaleType="center" android:background="@android:color/transparent"/>
     </LinearLayout>
@@ -37,6 +37,12 @@
             tools:layout_editor_absoluteY="5dp"
             tools:layout_editor_absoluteX="5dp">
 
+        <android.support.design.widget.FloatingActionButton
+                android:src="@drawable/ic_scanning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true" android:id="@+id/floatingActionButton2" android:layout_weight="1"
+                android:layout_gravity="bottom|right" android:layout_margin="20dp"/>
     </FrameLayout>
 
     <android.support.design.widget.BottomNavigationView

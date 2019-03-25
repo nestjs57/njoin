@@ -19,7 +19,7 @@ import java.util.ArrayList
 import com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE
 
 class HomeAdapter(private val statusSet: ArrayList<RootProductModel>) : RecyclerView.Adapter<HomeViewHolder>() {
-  
+
     private val intent: Intent? = null
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): HomeViewHolder {

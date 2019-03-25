@@ -1,19 +1,27 @@
 package com.hiyupin.njoin.fragment.home
 
 
+import android.content.Intent
 import android.os.Bundle
+import android.support.design.widget.FloatingActionButton
+import android.support.design.widget.Snackbar
 import android.support.v4.app.Fragment
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
 
 import com.agrawalsuneet.dotsloader.loaders.LazyLoader
+import com.google.zxing.integration.android.IntentIntegrator
+import com.google.zxing.integration.android.IntentResult
 import com.hiyupin.njoin.R
+import com.hiyupin.njoin.activity.main_page.MainPageActivity
 import com.hiyupin.njoin.pojo.home.ProductModel
 import com.hiyupin.njoin.pojo.home.RootProductModel
+import kotlinx.android.synthetic.main.fragment_home.*
 
 import java.util.ArrayList
 
@@ -29,7 +37,6 @@ class HomeFragment : Fragment(), HomeContract.homeView {
     private var mLayoutManager: LinearLayoutManager? = null
 
     private var homePresenter: HomePresenter? = null
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -49,7 +56,6 @@ class HomeFragment : Fragment(), HomeContract.homeView {
     }
 
     override fun showLoading() {
-
         //        progress.setVisibility(View.VISIBLE);
     }
 

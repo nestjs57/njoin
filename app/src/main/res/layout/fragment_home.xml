@@ -9,12 +9,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent" android:id="@+id/rvProduct"/>
 
-    <io.github.kobakei.materialfabspeeddial.FabSpeedDial
-            android:id="@+id/fab"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:fab_menu="@menu/scan"
-            tools:ignore="MissingConstraints"/>
+
     <com.agrawalsuneet.dotsloader.loaders.LazyLoader
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

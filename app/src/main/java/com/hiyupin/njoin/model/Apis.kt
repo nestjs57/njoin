@@ -13,7 +13,7 @@ public interface Apis {
     fun getRegister(
         @Query("email") email: String,
         @Query("password") password: String,
-        @Query("fullname") fullname : String
+        @Query("fullname") fullname: String
     ): Call<ResponseBody>
 
     @GET("dev/admin/files/api/njoin_api/query_product.php")
