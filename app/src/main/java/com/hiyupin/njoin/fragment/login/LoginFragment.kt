@@ -40,7 +40,7 @@ class LoginFragment : Fragment(), LoginContract.loginView {
     }
 
     fun setEvent(view: View) {
-        view?.btn_signup.setOnClickListener {
+        view!!.btn_signup.setOnClickListener {
             val intent = Intent(this.context, RegisterActivity::class.java)
 //            startActivity(intent)
             startActivityForResult(intent, 1)

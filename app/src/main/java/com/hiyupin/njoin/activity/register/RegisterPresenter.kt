@@ -41,7 +41,7 @@ class RegisterPresenter(view: com.hiyupin.njoin.activity.register.RegisterContra
                         mData = Gson().fromJson(response.body()!!.string(), object : TypeToken<List<UserModel>>() {
                         }.type)
 
-                        when (mData!![0]?.status) {
+                        when (mData!![0].status) {
                             0 -> {
                                 view?.setDataUser(mData!!)
                             }
