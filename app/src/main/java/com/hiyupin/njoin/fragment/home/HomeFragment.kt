@@ -1,6 +1,7 @@
 package com.hiyupin.njoin.fragment.home
 
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.FloatingActionButton
@@ -13,6 +14,7 @@ import android.view.LayoutInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ProgressBar
 
 import com.agrawalsuneet.dotsloader.loaders.LazyLoader
 import com.google.zxing.integration.android.IntentIntegrator
@@ -25,13 +27,10 @@ import kotlinx.android.synthetic.main.fragment_home.*
 
 import java.util.ArrayList
 
-/**
- * A simple [Fragment] subclass.
- */
 class HomeFragment : Fragment(), HomeContract.homeView {
 
     private var recyclerView: RecyclerView? = null
-    private var progress: LazyLoader? = null
+    private var progress: ProgressBar? = null
     private val dataSet: ArrayList<ProductModel>? = null
     private var adapter: HomeAdapter? = null
     private var mLayoutManager: LinearLayoutManager? = null
@@ -49,7 +48,7 @@ class HomeFragment : Fragment(), HomeContract.homeView {
         homePresenter!!.getItem()
 
         recyclerView = view.findViewById<View>(R.id.rvProduct) as RecyclerView
-        progress = view.findViewById<View>(R.id.progress) as LazyLoader
+        progress = view.findViewById<View>(R.id.progress) as ProgressBar
         //        dataSet = new ArrayList<ProductModel>();
 
         return view

@@ -12,6 +12,5 @@ class RootProductModel(
     @Expose
     var promotion: ArrayList<PromotionModel>
 
-
 ) {
 }

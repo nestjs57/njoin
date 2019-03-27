@@ -60,7 +60,7 @@ dependencies {
     annotationProcessor 'com.github.bumptech.glide:compiler:4.9.0'
 
     //Push Down Animation
-    implementation( 'com.github.thekhaeng:pushdown-anim-click:1.1.1' ){
+    implementation('com.github.thekhaeng:pushdown-anim-click:1.1.1') {
         exclude group: 'com.android.support'
     }
 

@@ -1,4 +1,4 @@
-package com.hiyupin.njoin.pojo
+package com.hiyupin.njoin.pojo.user
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

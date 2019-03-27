@@ -16,8 +16,8 @@
                 android:layout_height="wrap_content" android:background="@drawable/shadow_view"
         >
             <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
                     android:id="@+id/product_img" android:scaleType="fitXY"
                     app:srcCompat="@drawable/ic_launcher_background" tools:srcCompat="@drawable/ic_launcher_background"
                     android:contentDescription="@string/app_name"/>
@@ -28,40 +28,40 @@
                 <TextView
                         android:text="น้ำดื่มสิงห์ 750 มล"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/product_name" android:textSize="18sp"
-                        android:textColor="@color/color_gray_dark" android:paddingBottom="5dp" android:maxLines="1"
-                        android:ellipsize="end"/>
+                        android:layout_height="wrap_content" android:id="@+id/product_name" android:textSize="16sp"
+                        android:textColor="@color/color_gray_dark" android:maxLines="1"
+                        android:ellipsize="end" android:paddingBottom="2dp"/>
                 <TextView
                         android:text="น้ำดื่มคุณภาพดีจาก ธรรมชาติ ไม่มีสารเจือปนใดๆ คุณภาพดี อร่อย น้ำดื่มคุณภาพดีจาก ธรรมชาติ ไม่มีสารเจือปนใดๆ คุณภาพดี อร่อย"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/product_detail" android:textSize="14sp"
-                        android:textColor="@color/color_gray_light" android:paddingBottom="5dp" android:maxLines="2"
-                        android:ellipsize="end"/>
+                        android:layout_height="wrap_content" android:id="@+id/product_detail" android:textSize="12sp"
+                        android:textColor="@color/color_gray_light" android:maxLines="2"
+                        android:ellipsize="end" android:paddingBottom="2dp"/>
                 <RatingBar
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="?android:attr/ratingBarStyleSmall"
-                        android:id="@+id/product_rating"/>
+                        android:id="@+id/product_rating" android:paddingBottom="2dp"/>
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
                     <ImageView
-                            android:layout_width="20dp"
-                            android:layout_height="20dp" app:srcCompat="@drawable/ic_focus"
-                            android:id="@+id/imageView2" android:layout_gravity="bottom"
-                            android:layout_marginRight="5dp"/>
+                            android:layout_width="15dp"
+                            android:layout_height="15dp" app:srcCompat="@drawable/ic_focus"
+                            android:id="@+id/imageView2"
+                            android:layout_marginRight="5dp" android:layout_gravity="bottom|center|center_horizontal"/>
                     <TextView
                             android:text="3,012 ครั้ง"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" android:id="@+id/product_view" android:gravity="bottom"
-                            android:layout_weight="1" android:textSize="14sp"/>
+                            android:layout_weight="1" android:textSize="12sp"/>
                     <TextView
                             android:text="9 บาท"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" android:id="@+id/product_price"
                             android:layout_weight="1"
-                            android:gravity="right"/>
+                            android:gravity="right" android:textSize="12sp"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

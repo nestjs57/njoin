@@ -1,5 +1,6 @@
 package com.hiyupin.njoin.model
 
+import com.hiyupin.njoin.pojo.pdstatus.ProductStatus
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.http.GET
@@ -18,4 +19,7 @@ public interface Apis {
 
     @GET("dev/admin/files/api/njoin_api/query_product.php")
     fun getProduct(): Call<ResponseBody>
+
+    @GET("dev/admin/files/api/njoin_api/check_product.php")
+    fun checkProductStatus(@Query("barcode_id") barcode_id: String): Call<ProductStatus>
 }

@@ -1,22 +1,13 @@
 package com.hiyupin.njoin.activity.register
 
-import android.content.Context
-import android.support.design.widget.Snackbar
-import android.telecom.Call
-import android.util.Log
-import android.view.View
-import android.widget.TextView
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
-import com.hiyupin.njoin.fragment.RegisterContract
-import com.hiyupin.njoin.fragment.login.LoginContract
 import com.hiyupin.njoin.model.Apis
 import com.hiyupin.njoin.model.BaseURL
-import com.hiyupin.njoin.pojo.UserModel
+import com.hiyupin.njoin.pojo.user.UserModel
 import okhttp3.ResponseBody
 import retrofit2.Response
 import java.util.ArrayList
-import javax.security.auth.callback.Callback
 
 class RegisterPresenter(view: com.hiyupin.njoin.activity.register.RegisterContract.registerView) :
     com.hiyupin.njoin.activity.register.RegisterContract.registerPresenter {

@@ -50,6 +50,7 @@
                             android:background="@android:color/transparent"
                             android:id="@+id/edt_email"
                             android:hint="@string/txt_username"
+                            android:fontFamily="@font/kanitregular"
                             android:layout_marginLeft="10dp"
                             android:contentDescription="edtid"/>
                 </LinearLayout>
@@ -73,6 +74,7 @@
                             android:ems="10"
                             android:background="@android:color/transparent"
                             android:id="@+id/edt_password"
+                            android:fontFamily="@font/kanitregular"
                             android:hint="@string/txt_password"
                             android:layout_marginLeft="10dp"
                             android:contentDescription="edt_pw"/>
@@ -100,6 +102,7 @@
                             android:background="@android:color/transparent"
                             android:id="@+id/edt_confirm_password"
                             android:hint="@string/txt_confirm_password"
+                            android:fontFamily="@font/kanitregular"
                             android:layout_marginLeft="10dp"
                             android:contentDescription="edt_pw"/>
                 </LinearLayout>
@@ -127,6 +130,7 @@
                             android:id="@+id/edt_fullname"
                             android:hint="@string/txt_fullname"
                             android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/kanitregular"
                             android:contentDescription="edt_pw"/>
                 </LinearLayout>
                 <LinearLayout

@@ -1,6 +1,6 @@
 package com.hiyupin.njoin.activity.register
 
-import com.hiyupin.njoin.pojo.UserModel
+import com.hiyupin.njoin.pojo.user.UserModel
 
 interface RegisterContract {
 

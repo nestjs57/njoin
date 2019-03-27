@@ -1,16 +1,13 @@
 package com.hiyupin.njoin.activity.register
 
-import android.app.Activity
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.design.widget.Snackbar
-import android.util.Log
 import android.view.View
 import android.widget.Toast
 import com.chibatching.kotpref.Kotpref
 import com.hiyupin.njoin.R
 import com.hiyupin.njoin.UserConfig
-import com.hiyupin.njoin.pojo.UserModel
+import com.hiyupin.njoin.pojo.user.UserModel
 import kotlinx.android.synthetic.main.activity_register.*
 import android.content.Intent
 

@@ -1,4 +1,4 @@
-package com.hiyupin.njoin.fragment.notification
+package com.hiyupin.njoin.fragment.pddetail.comment
 
 
 import android.os.Bundle
@@ -9,14 +9,14 @@ import android.view.ViewGroup
 
 import com.hiyupin.njoin.R
 
-class NotificationFragment : Fragment() {
+class ProductCommentFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_notification, container, false)
+
+        return inflater.inflate(R.layout.fragment_product_comment, container, false)
     }
 
 
