@@ -17,4 +17,6 @@
     <string name="title_review" translatable="false">รีวิวล่าสุด</string>
     <string name="title_profile" translatable="false">ฉัน</string>
     <string name="title_notifications" translatable="false">แจ้งเตือน</string>
+    <string name="search_data">กำลังค้นหาข้อมูล</string>
+    <string name="wait">กรุณารอสักครู่ ...</string>
 </resources>

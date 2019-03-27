@@ -29,7 +29,7 @@ class MainPageActivity : AppCompatActivity(), MainPageContract.MainPageView {
 
     var progressDialog: ProgressDialog? = null
     var presenter: MainPagePresenter? = null
-
+    var intents: Intent? = null
 
     @SuppressLint("RestrictedApi")
     private val mOnNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener { item ->
@@ -106,19 +106,7 @@ class MainPageActivity : AppCompatActivity(), MainPageContract.MainPageView {
 
             if (result.contents != null) {
 
-                object : CountDownTimer(1500, 1000) {
-                    override fun onTick(millisUntilFinished: Long) {
-                        progressDialog!!.setTitle("กำลังค้นหาข้อมูล")
-                        progressDialog!!.setMessage("กรุณารอสักครู่ ...")
-                        progressDialog!!.show()
-                    }
-
-                    override fun onFinish() {
-                        progressDialog!!.dismiss()
-                        presenter?.getStatusProduct(result.contents)
-                    }
-                }.start()
-
+                presenter?.getStatusProduct(result.contents)
 
             } else {
             }
@@ -130,15 +118,14 @@ class MainPageActivity : AppCompatActivity(), MainPageContract.MainPageView {
     private fun StartToDetailPage(status: Boolean) {
         when (status) {
             true -> {
-//                val intent = Intent(this, Product_Detail::class.java)
-                Log.d("StartToDetailPage", "Detail")
+                intents = Intent(this, Product_Detail::class.java)
+                startActivity(intents)
             }
             false -> {
 //                val intent = Intent(this, Product_Detail::class.java)
                 Log.d("StartToDetailPage", "Add")
             }
         }
-        startActivity(intent)
     }
 
     fun InitialLogin() {
@@ -156,11 +143,16 @@ class MainPageActivity : AppCompatActivity(), MainPageContract.MainPageView {
         StartToDetailPage(status)
     }
 
-
     override fun showLoading() {
+        progressDialog?.also {
+            it.setTitle(getString(R.string.search_data))
+            it.setMessage(getString(R.string.wait))
+            it.show()
+        }
     }
 
     override fun hideLoading() {
+        progressDialog!!.dismiss()
     }
 }
 

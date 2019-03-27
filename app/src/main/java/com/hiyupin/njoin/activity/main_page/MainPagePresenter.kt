@@ -27,7 +27,6 @@ class MainPagePresenter(view: MainPageContract.MainPageView) : MainPageContract.
                 override fun onResponse(call: retrofit2.Call<ProductStatus>, response: Response<ProductStatus>) {
                     try {
                         view?.hideLoading()
-
                         var status: Boolean = response.body()!!.product_status
                         view?.toDetailProduct(status)
 
@@ -37,6 +36,7 @@ class MainPagePresenter(view: MainPageContract.MainPageView) : MainPageContract.
                 }
 
                 override fun onFailure(call: retrofit2.Call<ProductStatus>, t: Throwable) {
+                    view?.hideLoading()
                 }
             })
     }
