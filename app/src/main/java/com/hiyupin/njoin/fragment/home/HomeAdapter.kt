@@ -1,22 +1,19 @@
 package com.hiyupin.njoin.fragment.home
 
-import android.app.ProgressDialog
 import android.content.Intent
 import android.support.v7.widget.RecyclerView
-import android.util.Log
 import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup
 import com.bumptech.glide.Glide
 import com.hiyupin.njoin.R
-import com.hiyupin.njoin.pojo.home.ProductModel
-import com.hiyupin.njoin.pojo.home.PromotionModel
 import com.hiyupin.njoin.pojo.home.RootProductModel
 import com.thekhaeng.pushdownanim.PushDownAnim
 
 import java.util.ArrayList
 
 import com.thekhaeng.pushdownanim.PushDownAnim.MODE_SCALE
+import android.view.animation.AnimationUtils
+
 
 class HomeAdapter(private val statusSet: ArrayList<RootProductModel>) : RecyclerView.Adapter<HomeViewHolder>() {
 

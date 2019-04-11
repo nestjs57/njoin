@@ -2,6 +2,7 @@ package com.hiyupin.njoin.fragment.home
 
 import android.support.v7.widget.RecyclerView
 import android.view.View
+import android.view.animation.AnimationUtils
 import android.widget.*
 import com.hiyupin.njoin.R
 
@@ -22,6 +23,7 @@ class HomeViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     init {
 
         this.ads_one = itemView.findViewById<ImageButton>(R.id.ads_one)
+      
         this.ads_two = itemView.findViewById<ImageButton>(R.id.ads_two)
         this.ads_three = itemView.findViewById<ImageButton>(R.id.ads_three)
 

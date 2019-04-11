@@ -20,44 +20,53 @@
                     android:layout_height="130dp"
                     android:id="@+id/product_img" android:scaleType="fitXY"
                     app:srcCompat="@color/color_gray_light" tools:srcCompat="@color/color_gray_light"
-                    android:contentDescription="@string/app_name"/>
+                    android:contentDescription="@string/app_name"
+                    android:background="@color/common_google_signin_btn_text_dark_disabled"/>
             <LinearLayout
                     android:orientation="vertical"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" android:padding="10dp">
                 <TextView
-                        android:text="น้ำดื่มสิงห์ 750 มล"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" android:id="@+id/product_name" android:textSize="16sp"
                         android:textColor="@color/color_gray_dark" android:maxLines="1"
-                        android:ellipsize="end" android:paddingBottom="2dp"/>
+                        android:ellipsize="end" android:paddingBottom="2dp"
+                        android:background="@color/color_gray_light"/>
                 <TextView
                         android:text="น้ำดื่มคุณภาพดีจาก ธรรมชาติ ไม่มีสารเจือปนใดๆ คุณภาพดี อร่อย น้ำดื่มคุณภาพดีจาก ธรรมชาติ ไม่มีสารเจือปนใดๆ คุณภาพดี อร่อย"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content" android:id="@+id/product_detail" android:textSize="12sp"
+                        android:layout_height="35dp" android:id="@+id/product_detail" android:textSize="12sp"
                         android:textColor="@color/color_gray_light" android:maxLines="2"
-                        android:ellipsize="end" android:paddingBottom="2dp"/>
-                <RatingBar
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        style="?android:attr/ratingBarStyleSmall"
-                        android:id="@+id/product_rating" android:paddingBottom="2dp"/>
+                        android:ellipsize="end" android:paddingBottom="2dp"
+                        android:background="@color/color_gray_light" android:layout_marginTop="5dp"/>
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="100dp"
+                        android:layout_height="15dp" android:background="@color/color_gray_light"
+                        android:layout_marginTop="5dp" android:layout_marginBottom="3dp">
+                    <RatingBar
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="?android:attr/ratingBarStyleSmall"
+                            android:id="@+id/product_rating" android:paddingBottom="2dp"
+                            android:background="@color/color_gray_light" android:layout_marginTop="5dp"
+                            android:visibility="invisible"/>
+                </LinearLayout>
                 <LinearLayout
                         android:orientation="horizontal"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="wrap_content" android:background="@color/color_gray_light"
+                        android:layout_marginTop="5dp">
                     <ImageView
                             android:layout_width="15dp"
                             android:layout_height="15dp" app:srcCompat="@drawable/ic_focus"
                             android:id="@+id/imageView2"
                             android:layout_marginRight="5dp" android:layout_gravity="bottom|center|center_horizontal"/>
                     <TextView
-                            android:text="3,012 ครั้ง"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent" android:id="@+id/product_view" android:gravity="bottom"
                             android:layout_weight="1" android:textSize="12sp"/>
                     <TextView
-                            android:text="9 บาท"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content" android:id="@+id/product_price"
                             android:layout_weight="1"
